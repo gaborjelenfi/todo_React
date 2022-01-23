@@ -1,0 +1,13 @@
+.input__text {
+    border: none;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.input__text:focus {
+    outline: none;
+}

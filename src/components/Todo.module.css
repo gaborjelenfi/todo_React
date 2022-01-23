@@ -1,0 +1,71 @@
+.todo__container {
+    display: flex;
+    word-break: break-word;
+    background: #314755;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    max-width: 500px;
+    margin-top: 8px;
+    padding: 2px;
+    padding-left: 20px;
+    border-radius: 8px;
+}
+
+.todo__container:nth-child(even) {
+    background: #314755;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #314755, #26a0da );  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #314755, #26a0da); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    
+}
+
+.todo__container:hover,
+.completed:hover,
+.todo__container:nth-child(even):hover {
+    background: #3d87b47e; 
+}
+
+.todo__textbox {
+    width: 100%;
+}
+
+.todo__text {
+    font-size: 20px;
+    display: flex;
+    color: #ffffff;
+}
+
+.todo__icons {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.todo__icon_edit,
+.todo__icon_trash {
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    z-index: 12;
+}
+.todo__icon_trash {
+    margin-left: 15px;
+}
+
+.todo__icon_trash:hover {
+    color: #fc7777a8;
+    border: 2px solid #fc7777a8;
+}
+
+.todo__icon_edit:hover {
+    color: #89b7fc8e;
+    border: 2px solid #89b7fc8e;
+}
+
+.completed,
+.completed:nth-child(even) {
+    text-decoration: line-through;
+    background: #31475583; 
+}
